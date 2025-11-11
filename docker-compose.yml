@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  transcribe:
+    build: .
+    volumes:
+      - /Users/jbrelsf2/Desktop:/Users/jbrelsf2/Desktop
+    working_dir: /app
+    command: python transcribe.py
